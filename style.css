@@ -1,0 +1,163 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0e1a3a;
+    color: white;
+}
+
+/* Шапка */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #172a55;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn {
+    background: #ff9800;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Главный блок */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    text-align: left;
+}
+
+.hero img {
+    width: 300px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+}
+
+/* Курсы */
+.courses {
+    text-align: center;
+    padding: 50px;
+}
+
+.course-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.course {
+    background: #1e3b70;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+}
+
+/* Отзывы */
+.testimonials {
+    text-align: center;
+    padding: 50px;
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review {
+    background: #2c4880;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* FAQ */
+.faq {
+    text-align: center;
+    padding: 50px;
+}
+
+.faq-item {
+    background: #1e3b70;
+    padding: 10px;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 5px;
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #172a55;
+}
+
+
+
+/* ======= АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНОВ ======= */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        background: #1a2b5d;
+        padding: 10px;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .course-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq-item {
+        width: 90%;
+    }
+}
